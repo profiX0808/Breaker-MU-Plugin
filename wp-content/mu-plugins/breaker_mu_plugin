@@ -19,8 +19,8 @@ function mu_disable_plugin_by_condition( $active_plugins ) {
 		$disabled_plugin = 'custom-tweaks/custom-tweaks.php';
 
 		if( $key = array_search( $disabled_plugin, $active_plugins ) ) {
-      unset( $active_plugins[$key] );
-    }
+      			unset( $active_plugins[$key] );
+    		}
 	}
 
 	return $active_plugins;
